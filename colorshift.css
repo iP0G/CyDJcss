@@ -1,3 +1,17 @@
+@-webkit-keyframes colorShift {
+    0% { color: #FF0000; }
+    10% { color: #ffa500; }
+    20% { color: #fff200; }
+    30% { color: #73ff00; }
+    40% { color: #00ff73; }
+    50% { color: #00ffc8; }
+    60% { color: #0026ff; }
+    70% { color: #4c00ff; }
+    80% { color: #a200ff; }
+    90% { color: #ff00ea; }
+    100% { color: #ff0062; }
+}
+
 @keyframes colorShift {
     0% { color: #FF0000; }
     10% { color: #ffa500; }
@@ -21,10 +35,10 @@
     text-shadow: 1px 0 10px #2e576b;
 }
 
-.chat-msg-MrDestructoidCyDJ .userlist_owner {
+/* .chat-msg-MrDestructoidCyDJ .userlist_owner {
     color: #eb47d0!important;
     text-shadow: 1px 0 10px #2e576b;
-}
+} */
 
 .chat-msg-IP0G .userlist_owner {
     /*color: #00FFFF!important;*/
