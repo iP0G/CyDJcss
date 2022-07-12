@@ -1,15 +1,15 @@
 @keyframes colorShift {
-    0% { color: #FF0000; }
-    10% { color: #ffa500; }
-    20% { color: #fff200; }
-    30% { color: #73ff00; }
-    40% { color: #00ff73; }
-    50% { color: #00ffc8; }
-    60% { color: #0026ff; }
-    70% { color: #4c00ff; }
-    80% { color: #a200ff; }
-    90% { color: #ff00ea; }
-    100% { color: #ff0062; }
+    0% { color: #FF0000!important; }
+    10% { color: #ffa500!important; }
+    20% { color: #fff200!important; }
+    30% { color: #73ff00!important; }
+    40% { color: #00ff73!important; }
+    50% { color: #00ffc8!important; }
+    60% { color: #0026ff!important; }
+    70% { color: #4c00ff!important; }
+    80% { color: #a200ff!important; }
+    90% { color: #ff00ea!important; }
+    100% { color: #ff0062!important; }
 }
 
 /* epic colors for specific members */
