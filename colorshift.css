@@ -1,0 +1,53 @@
+@keyframes colorShift {
+    0% { background-color: #FF0000; }
+    10% { background-color: #ffa500; }
+    20% { background-color: #fff200; }
+    30% { background-color: #73ff00; }
+    40% { background-color: #00ff73; }
+    50% { background-color: #00ffc8; }
+    60% { background-color: #0026ff; }
+    70% { background-color: #4c00ff; }
+    80% { background-color: #a200ff; }
+    90% { background-color: #ff00ea; }
+    100% { background-color: #ff0062; }
+}
+
+/* epic colors for specific members */
+ .chat-msg-JohnRG123 .userlist_owner {
+    background-color:#66ccff;
+    border-radius:5px;
+    padding-left:3px;
+    color: #2e576b!important;
+    text-shadow: 1px 0 10px #2e576b;
+}
+
+.chat-msg-MrDestructoidCyDJ .userlist_owner {
+    color: #eb47d0!important;
+    text-shadow: 1px 0 10px #2e576b;
+}
+
+.chat-msg-IP0G .userlist_owner {
+    color: #00FFFF!important;
+    text-shadow: 2px 0 10px #00FFFF;
+    -webkit-animation-name: colorShift;
+    animation-name: colorShift;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+}
+
+.chat-msg-spintto .userlist_owner {
+    color: #01FFFF!important;
+    text-shadow: 1px 0 10px #01FFFF;
+}
+
+.chat-msg-Zombsiee .userlist_owner {
+    color: #ffd966!important;
+    text-shadow: 0px 0px 10px rgb(255 217 102)!important;
+}
+
+.chat-msg-jensai2 .userlist_op {
+    color: #ACABF8!important;
+    text-shadow: 1px 0 10px #ACABF8;
+}
