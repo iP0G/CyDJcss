@@ -1,7 +1,3 @@
-body {
-  overflow-x: hidden; /* Hide horizontal scrollbar */
-}
-
 /* epic colors for specific members */
  .chat-msg-JohnRG123 .userlist_owner {
     background-color:#66ccff;
