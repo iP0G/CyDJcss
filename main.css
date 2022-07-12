@@ -12,10 +12,10 @@
     text-shadow: 1px 0 10px #2e576b;
 }
 
-/* .chat-msg-IP0G .userlist_owner {
-    color: #00FFFF!important;
+.chat-msg-IP0G .userlist_owner {
+    color: #1000FF!important;
     text-shadow: 1px 0 10px #00FFFF;
-} */
+}
 
 .chat-msg-spintto .userlist_owner {
     color: #01FFFF!important;
