@@ -1,0 +1,912 @@
+/* ----- Smoothing default CyTube CSS (works without JS) ----- */
+
+	/* -- body -- */
+
+    @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+    
+    body {
+        font-family: 'Varela Round', sans-serif;
+        font-size:14px;
+        font-weight:lighter;
+    }
+    
+    b, strong {
+        font-weight: 400;
+    }
+    
+    h2, h5, h6, h5 {
+        font-family: 'Varela Round', sans-serif;
+    }
+    
+    h1, h4, h3 {
+        font-family: 'Quicksand', sans-serif;
+    }
+    
+    .poll-notify {
+        font-weight:normal;
+    }
+    
+    .userlist_owner{
+        font-weight:lighter!important;
+    }
+    
+    .label {
+        font-weight:lighter
+    }
+    
+    label {
+        font-weight:lighter
+    }
+    
+        /* -- buttons -- */
+    
+    .btn {text-shadow:none}
+    
+        /* -- modal windows -- */
+    
+    @media screen and (min-width: 768px) {
+        .modal-dialog {max-width:950px !important; margin-top:10px}
+    }
+    
+        /* -- brand -- */
+    
+    .navbar-brand {cursor:default}
+    
+    .navbar-brand, .navbar-inverse {
+        /*original #ccc */
+        color: white!important;
+        text-shadow: 0px 0px 10px black, 0px 0px 10px black !important;
+    }
+    
+    input#logout[type="submit"] {
+        color: #fff;
+        background: none;
+        border: none;
+        padding: 0; 
+    }
+    
+        /* -- MOTD -- */
+    
+    #motdwrap {padding:10px; border-color:white; box-shadow:none}
+    #togglemotd {margin-top:-5px}
+    
+        /* -- superadmin icon -- */
+    
+    .glyphicon-globe {margin-right:3px}
+    
+        /* -- playlist row panes -- */
+    
+    #rightpane, #leftpane {margin-top:5px !important; margin-bottom:5px !important}
+    
+        /* -- left pane wells -- */
+    
+    #leftpane .well {margin-bottom:5px}
+    
+        /* -- queue titles -- */
+    
+    .qe_title {
+        font-family: 'Quicksand', sans-serif;
+        margin-left:4px;
+        letter-spacing:.6px;
+    }
+    
+        /* -- footer -- */
+    
+    #footer {padding-bottom:5px; height:auto}
+    
+    
+    /* ----- Patching CSS after loading JS (comments only here, actual patches in the JS) ----- */
+    
+    
+    /* ----- CyTube Plus created elements CSS ----- */
+    
+    
+        /* -- channel avatar -- */
+    
+    #chanavatar {margin-right:10px}
+    
+        /* -- azuki row (user top logo) -- */
+    
+    #azukirow {
+        padding-left:5px; padding-right:5px; border-left:solid 2px transparent; border-right:solid 2px transparent;
+        background:transparent; background-repeat:no-repeat !important; background-position:center center !important;
+        margin:0px -8px; min-height:5px;
+    }
+    
+        /* -- MOTD elements -- */
+    
+    #motdlogo {
+        max-width: 100%;
+        max-height: 100%;
+        float: left;
+        border: solid;
+        border-radius: 15px;
+        /* border-style: dashed; */
+        border-color: #94d1bd;
+    }
+    
+    #motdtabswrap {margin-top:8px}
+    .motdtabs-btn {margin-right:5px}
+    #motdtabscontent {padding:10px 5px}
+    
+        /* -- rules button and panel -- */
+    
+    #rulesbtnwrap {text-align:center}
+    #rules-btn {margin-top:10px; margin-bottom:5px}
+    #rulespanel-outer {width:100%; padding:0px}
+    #rulespanel {
+        max-width:700px; margin:0 auto; margin-top:0px; padding:4px; border:solid 2px white; text-align:left;
+        border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px; float:left;
+    }
+    
+        /* -- attention bar -- */
+    
+    #attbarrow-outer {padding:0px 5px}
+    #attbar {height:22px; background-color:white}
+    
+        /* -- full-sized title row -- */
+    
+    #titlerow {
+        background-color:#ffffff00!important;
+        background-image:linear-gradient(to right, #cccccc, #cccccc);
+        background-position:0px center;
+        background-size:0% 100%; background-repeat:no-repeat;
+        margin:-5px -8px 5px;
+        border-radius:4px;
+    }
+    
+    #titlerow-outer {
+        padding: 3px 5px;
+        text-align: center;
+        font-size: 16pt;
+        color: #fff !important;
+        color: #ffff91!important;
+        /* text-shadow: 0px 0px 10px #8b8b8b, 0px 0px 10px #ffff91 !important; */
+        background-color: #293d36;
+        letter-spacing: 2px;
+        border-radius: 10px;
+        border: 1px solid;
+    }
+    
+    #titlerow #currenttitle {
+        font-family: 'Quicksand', sans-serif;
+        border:none; 
+        background:transparent;
+        /*background-image:url(https://cdn.betterttv.net/emote/55edf68356405635537bea72/2x)!important;*/
+    }
+    
+    #currenttitle{
+        max-width:calc(100% - 0px);
+        display:block;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        line-height:45px;
+        background-color: #272b30;
+    }
+        /* -- media info bar -- */
+    
+    #mediainfo {
+        background:transparent; margin-bottom:0px; border-width: 1px 1px 0px; border-style:solid solid none;
+        border-color:#CCC #CCC -moz-use-text-color; border-radius:5px 5px 0px 0px; height:21px;
+    }
+    
+        /* -- player alert (if hidden video after loading) -- */
+    
+    #ytapiplayer .alert {text-align:left; margin:0px -15px}
+    
+        /* -- player covering layer -- */
+    
+    #coverpl {
+        position:absolute; left:5px; top:0px; background-color:white;
+        background-repeat:no-repeat; background-position:center center;
+            max-width:100%!important; max-height:100%!important;
+    }
+    
+        /* -- sounds and admin panels GUI layers -- */
+    
+    #sounds-dropdown, #chatfunc-dropdown {
+        position:absolute; top:22px; display:block; z-index:10000; padding:5px;
+        overflow:auto; margin-right:5px;
+    }
+    #muteall-btn, #spamclear-btn, #antiafk-btn {width:100%}
+    
+        /* -- chat controls buttons group -- */
+    
+    #chatcontrols {margin-top:4px}
+    
+        /* -- chat elements -- */
+    
+    .squavatar {width:24px; height:24px; margin-right:3px; border:solid 6px; vertical-align:middle; display:inline-block}
+    .avatar {margin-right:3px}
+    .server-whisper + .squavatar {display:none}
+    .globalmod {margin-right:2px}
+    .embedimg {max-width:200px; max-height:300px}
+    .embedvid {max-width:200px; max-height:300px; border:0px; vertical-align:middle}
+    
+        /* -- main fonts and emotes GUI layer -- */
+    
+    #chatpanel {
+        margin-top:0px; 
+        margin-bottom:0px;
+    }
+    
+    #fontspanel, #emotespanel {
+        text-align:center; max-width:700px; margin:0px auto 5px auto; border:solid 2px white; border-radius:6px
+    }
+    
+    .fluidpanel {max-width:1200px !important}
+    
+        /* -- fonts panel -- */
+    
+    #fontsbtnwrap {margin-top:5px; margin-bottom:5px}
+    #unibtnwrap {margin:5px 45px 2px}
+    @media (max-width:767px) {
+        #unibtnwrap {margin:5px 25px 2px}
+    }
+    #fontsbtnwrap .btn, #unibtnwrap .btn {margin:0px 3px 3px 3px}
+    
+        /* -- emotes panel -- */
+    
+    #emotespanel img {margin:5px; max-height:35px; cursor:pointer}
+    #emotesbtnwrap {text-align:center; margin:5px}
+    #emotespanel .alert {text-align:left; margin:5px -10px}
+    
+        /* -- advanced playlist controls -- */
+    
+    #advplcontrols {width:100%; padding-top:10px}
+    #advplcontrols button {width:25%}
+    
+        /* -- database and galleries buttons gruoup -- */
+    
+    #leftpanecontrols {margin-right:5px}
+    
+        /* -- layout configuration box toggling button -- */
+    
+    #layout-btn {margin-left:5px}
+    
+        /* -- various configuration box elements -- */
+    
+    #configbtnwrap, #modewrap, #themewrap, #funcbtnwrap, #cleardbwrap, #gallery-well, #hidewrap, #embedwrap {
+        text-align:center;
+    }
+    .conf-cap {padding-top:9px}
+    #mode-sel, #theme-sel, #gal-sel {width:80%; margin:0px auto}
+    .theme-header {text-align:center; font-size:9pt; font-style:italic}
+    #embed-help {cursor:pointer; margin-left:7px}
+    
+        /* -- channel database -- */
+    
+    .db-cat {overflow:auto; max-height:400px}
+    .db-break {width:100%}
+    .db-title {margin-left:4px}
+    .db-link {margin-left:5px}
+    #previewFrame {margin:0 auto; display:block}
+    
+        /* -- channel galleries -- */
+    
+    #galleryFrame {margin-bottom:10px}
+    #gal-sel {margin-bottom:20px}
+    
+        /* -- custom footer -- */
+    
+    #leftfooter {font-size:10pt}
+    div[id="leftfooter"] {text-align:center; margin-bottom:5px}
+    #rightfooter {float:right; margin:0px 0px 15px 15px}
+    
+    
+    /* ----- Additional JS classes ----- */
+    
+    
+    .relative {position:relative}
+    
+    .covered {visibility:hidden; opacity:0}
+    
+    .dist {background-color:gold; color:red; font-size:12pt; font-family:times new roman; padding:3px}
+    
+    .mX {
+        -webkit-transform:scaleX(-1); -moz-transform:scaleX(-1); transform:scaleX(-1);
+        -ms-transform:scaleX(-1); -o-transform:scaleX(-1);
+    }
+    
+    .mY {
+        -webkit-transform:scaleY(-1); -moz-transform:scaleY(-1); transform:scaleY(-1);
+        -ms-transform:scaleY(-1); -o-transform:scaleY(-1);
+    }
+    
+    .rotate {
+        -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); transform:rotate(180deg);
+        -ms-transform:rotate(180deg); -o-transform:rotate(180deg);
+    }
+    
+    .vertical {
+        -webkit-transform:rotate(270deg); -moz-transform:rotate(270deg); transform:rotate(270deg);
+        -ms-transform:rotate(270deg); -o-transform:rotate(270deg);
+    }
+    
+    #messagebuffer div {
+        border-top: rgba(64,64,64,0.30) 1px solid;
+        border-bottom: rgba(0,0,0,0.5) 1px solid;
+        border-right: 1px solid rgba(0,0,0,0.65);
+        margin-top: 1px;
+        padding: 5px;
+        margin-left: -5px;
+        margin-right: -5px;
+        /*transition: opacity ease-in-out .7s;*/
+    }
+    
+    .nick-highlight {
+        background-color: rgb(148 209 189 / 40%)!important;
+        color: #ffd966;
+        text-shadow:0px 0px 10px rgb(255 217 102)!important;  /*, 0px 0px 10px #ffd966 !important*/
+    }
+    
+    .navbar-brand {
+        float: left;
+        padding: 10px;
+        font-size: 18px;
+        line-height: 32px;
+        height: 50px;
+    }
+    
+    .dropdown-menu {
+        animation: animateDropdown 300ms ease-in-out forwards;
+        transform-origin: top center;
+    }
+    
+    @keyframes animateDropdown {
+        0% {
+            transform: rotateX(-90deg)
+        }
+        70% {
+            transform: rotateX(20deg) 
+        }
+        100% {
+            transform: rotateX(0deg) 
+        }
+    }
+    
+    #chanavatar {
+        float: left;
+        padding: 0px;
+    }
+    
+    #resize-video-smaller {
+    display: none;
+    }
+    
+    #resize-video-larger {
+    display: none;
+    }
+    
+    .shout {
+        color: #ff0000;
+        font-weight: lighter!important;
+        font-size: 18pt!important;
+    }
+    
+    #audiofeedbacktoggle {
+    display:none;
+    }
+    
+    #compacttoggle {
+    display:none;
+    }
+    
+    #titletoggle {
+    display:none;
+    }
+    
+    #timestamptoggle {
+    display:none;
+    }
+    
+    /*#emotelistbtn {
+        margin-left: -5px;
+    }*/
+    
+    .panel-primary>.panel-heading {
+        background-color: #94d1bd;
+        border: 2px solid #94d1bd!important;
+        border-radius: 10px!important;
+        color: #fff;
+      background-image: url(https://cdn.discordapp.com/attachments/915490680468561990/947608302202789958/trig.gif)!important;
+        background-size: contain!important;
+        background: scroll;
+        text-shadow: 0px 0px 10px #000000, 0px 0px 10px #000 !important;
+    }
+    
+    .pm-panel > .panel-body > .pm-buffer {
+        background-color: #141f1b;
+    }
+    
+    .panel-default>.panel-heading {
+        background-color: #293d36bd;
+        color:#94d1bd;
+        border-radius:10px!important
+    }
+    
+    .pm-panel {
+        border-radius:10px!important
+    }
+    
+    .profile-box{
+        -left:-10vw;
+        width:auto; 
+    }
+    
+    .server-msg-disconnect {
+        font-family: 'Quicksand', sans-serif;
+        border: 2px solid #94d1bd!important;
+        background-image: url(https://cdn.discordapp.com/attachments/915490680468561990/947608302202789958/trig.gif)!important;
+        background-size: contain!important;
+        background: scroll;
+        color: #fff;
+        border-radius: 15px;
+        font-size: 18px;
+        font-style: italic;
+        text-align: justify;
+        text-shadow: 10px 0px 10px #000000, 10px 0px 10px #000000 !important;
+        transition: all .7s!important;
+    }
+    
+    .server-msg-disconnect:hover {
+        transform: scale(1.03);
+        transition: all .4s!important;
+    }
+    
+    .server-msg-reconnect {
+        font-family: 'Quicksand', sans-serif;
+        border: 2px solid #94d1bd!important;
+        background-image: url(https://cdn.discordapp.com/attachments/915490680468561990/947608302202789958/trig.gif)!important;
+        background-size: contain!important;
+        background: scroll;
+        color: #fff;
+        border-radius: 15px;
+        font-size: 18px;
+        font-style: italic;
+        text-align: justify;
+        text-shadow: 10px 0px 10px #000000, 10px 0px 10px #000000 !important;
+        transition: all .7s!important;
+    }
+    
+    .server-msg-reconnect:hover {
+        transform: scale(1.03);
+        transition: all .5s!important;
+    }
+    
+    #cs-chanlog-filter{height:150px!important;margin-bottom:10px!important}
+    #cs-chanlog-text{background-color:#141414!important;color:red;border:0 solid}
+    
+    .form-control{color:#c8c8c8;width:100%;border-top:0;background-color:#141414;border:solid 1px #ccc}
+    
+    #messagebuffer{
+      transition: all 0.5s !important;
+    }
+    
+    #messagebuffer div.nick-hover{
+        border-left: #FF0000 solid 1px;
+        padding-left: 4px;
+    /*    transition: 0.3s;*/
+    }
+    
+    .form-group{
+      transition: all 0.5s !important;
+    }
+    
+    .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-text {
+      font-family: 'Quicksand', sans-serif;
+      transition: all 0.5s;
+      color:#ccc!important
+    }
+    
+    .nav-tabs>li>a {
+      transition: all 0.3s;
+    }
+    
+    .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+      background-color:#5c7069;
+      border-width:3px;
+    }
+    
+    .dropdown-menu>li>a {
+        transition: all 0.3s;
+        color: #ccc!important;
+    }
+    
+    .row{
+      transition: all 0.5s;
+    }
+    
+    .btn, .btn-default, .btn-group .btn+.btn, .btn-group .btn+.btn-group, .btn-group .btn-group+.btn, .btn-group .btn-group+.btn-group {
+      transition: all 0.3s;
+      border-radius:10px;
+    }
+    
+    .btn {
+      box-shadow: inset 0 0 0 0 #4cb290;
+      -webkit-transition: ease-out 0.4s;
+      -moz-transition: ease-out 0.4s;
+      transition: ease-out 0.4s;
+    }
+    
+    .well {
+        background-color: #ff66ab33;
+        border-radius: 10px;
+        border-color: #ff66ab!important;
+        border: 1px solid;
+    }
+    
+    .alert-danger {
+        background-color: #ee5f5b33;
+        border-radius: 10px;
+        border-color: #ed4d63!important;
+        border: 1px solid;
+    }
+    
+    #motdwrap {
+        border-color:white!important;
+    }
+    
+    #motd {
+        font-family: 'Quicksand', sans-serif;
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    .alert-info {
+        background-color: #ff66ab33;
+        border-color: #ff66ab;
+        color: #fff;
+        border-radius: 10px;
+        border-width: 1px;
+        text-align: center;
+        /* border-bottom-right-radius: 5px; */
+        /* border-bottom-left-radius: 5px; */
+    }
+    
+    #nav-collapsible {
+        background-image: linear-gradient(#3f2831,#3f2831 60%,#23322d);
+    }
+    
+    .server-whisper {
+        color: #66ccff;
+        text-shadow: 0px 0px 10px #66ccff, 0px 0px 10px #66ccff !important;
+    }
+    
+    .action {
+        font-style: italic;
+        color: #fe66ab;
+        text-shadow: 0px 0px 10px #fe66ab, 0px 0px 10px #fe66ab !important;
+    }
+    
+    .label-success {
+        background-color: #4cb290;
+        border-radius: 1px 8px 1px 1px;
+    }
+    
+    .userlist_item {
+        padding-left:2.2px;
+    }
+    
+    .glyphicon-time:before {
+        content: "\e023";
+        color: #ccc!important;
+    }
+    
+    .glyphicon-star-empty:before {
+        content: "\e007";
+        color: #ebd047!important;
+    }
+    
+    .glyphicon-volume-off:before {
+        content: "\e036";
+        color: #ec4d49!important;
+    }
+    
+    .userlist_op {
+        color: #79d61d!important;
+    }
+    
+    .userlist_owner {
+        color: #eb8c47!important;
+    }
+    
+    span:not(.userlist_op):not(.userlist_owner) > strong.username {
+      color: #0087c9;
+    }
+    
+    div.userlist_item > span:not(.userlist_op):not(.userlist_owner) {
+      color: #0087c9;
+    }
+    
+    .dark-theme > .odd-message {
+      background-color: #141f1b;
+    }
+    
+    .dark-theme > .even-message {
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+    
+    .light-theme > .odd-message {
+      background-color: #ffffff;
+    }
+    
+    .light-theme > .even-message {
+      background-color: #f5f5f5;
+    }
+    
+    .glyphicon {
+        font-weight: 500;
+    }
+    
+    .btn {
+        letter-spacing: .2px
+    }
+    
+    /*.btn-group-sm>.btn, .btn-sm {
+        padding: .1px 5px;
+    }*/
+    
+    /*#fonts-btn {
+        display: flex;
+        height: 31px;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }*/
+    
+    #plmeta {
+        border-radius:4px
+    }
+    
+    .queue_entry {
+        border-radius:10px
+    }
+    
+    .modal-header {
+        border-radius: 20px
+    }
+    
+    .modal-footer {
+        border-radius: 20px
+    }
+    
+    .modal-content {
+        border-radius: 20px;
+    }
+    
+    #footer {
+        background-color: #171c1a!important;
+    }
+    
+    .btn {
+        background-image: linear-gradient(#fff0, #fff0, #fff0)!important;
+        background-color: #fff0;
+        border-color: #4cb290;
+    }
+    
+    .btn-default:hover {
+        background-color: #4cb290;
+        /*border-width:1.6px*/
+        /* transform: scale(1.1); */
+        /*backface-visibility: hidden; */
+        transition: all 0.3s;
+        /* box-shadow: 0px 0px 5px #4cb290, 0px 0px 10px #4cb290 !important; */
+        box-shadow: inset 0 0 0 50px #4cb290, 0px 0px 10px #4cb290;
+    }
+    
+    .btn-default:active {
+      transform: translate(0px, 2px);
+      -webkit-transform: translate(0px, 2px);
+    }
+    
+    .queue_active {
+        border-width:3px;
+        border-color:#ffd966;
+        background-image: linear-gradient(#8a919600, #7a828800, #70787d00);
+        padding:4px;
+        transition: ease-out .7s!important;
+        border-left-width:7px;
+        border-left-style:groove;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 12pt;
+    }
+    
+    .queue_entry:hover {
+        transition: all .4s!important;
+        padding-left:6px;
+    }
+    
+    .queue_entry {
+        transition: all .7s!important;
+    }
+    
+    .close {
+        padding-left:10px!important;
+    }
+    
+    .profile-box, .user-dropdown, .emotelist-table td {
+        border-radius:10px;
+    }
+    
+    #motd {
+        text-align: center;
+    }
+    
+    .queue_active.queue_temp {
+        background-color: #293d36bd;
+    }
+    
+    .channel-emote:hover {
+        transform: scale(1.4);
+        transition: all .4s!important;
+    }
+    
+    .channel-emote {
+        transition: all .7s!important;
+    }
+    
+    .embedimg:hover {
+        transform: scale(1.2);
+        transition: all .4s!important;
+    }
+    
+    .embedimg {
+        transition: all .7s!important;
+    }
+    
+    img:hover {
+        transform: scale(1.4);
+        transition: all .4s!important;
+    }
+    
+    img {
+        transition: all .7s!important;
+    }
+    
+    #motdlogo:hover {
+        transform: scale(1.0)!important;
+    }
+    
+    /*#emotelistbtn {
+        background-image: url(https://cdn.discordapp.com/attachments/915490680468561990/947409745856315392/legacy_smile.png)!important;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: 18px;
+        width:34px
+    }
+    
+    .glyphicon-picture:before {
+        content: "";
+    }*/
+    
+    #drinkcount {
+        background-color: #000000;
+        color: #ffffff;
+        border: 2px solid #94d1bd!important;
+        font-weight: lighter;
+        font-style: italic;
+        background-image: url(https://cdn.discordapp.com/attachments/915490680468561990/947608302202789958/trig.gif)!important;
+        background-size: contain!important;
+        background: scroll;
+        border-radius: 10px;
+    }
+    
+    .drink {
+        border: none;
+        font-style:italic;
+    }
+    
+    ::selection {
+        color: #94d1bd;
+        background-color: #f4438961;
+    }
+    
+    ::-moz-selection {
+        color: #94d1bd;
+        background-color: #f4438961;
+    }
+    
+    ::-webkit-scrollbar{min-height:10px;width:6px;background:transparent}
+    ::-webkit-scrollbar-thumb{background:#D8DFE6;opacity:7;border-radius:1ex;}
+    ::-webkit-scrollbar-corner{background:#FFF}
+    
+    #coverpl {
+        background-color:black!important;
+    }
+    
+    input.form-control[type="text"], input.form-control[type="password"], input.form-control[type="email"], textarea.form-control {
+        background-color: #141f1b !important;
+        border-radius: 10px;
+    }
+    
+    #chatheader, #videowrap-header {
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    .btn-danger:hover {
+        border-color:#e7201a!important
+    }
+    
+    .btn-danger:hover {
+        box-shadow: 0px 0px 5px #e7201a, 0px 0px 10px #e7201a !important;
+    }
+    
+    .btn-success:hover {
+        border-color:#42b142!important
+    }
+    
+    .btn-success:hover {
+        box-shadow: 0px 0px 5px #42b142, 0px 0px 10px #42b142 !important;
+    }
+    
+    .btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {
+        border-bottom-left-radius: 4px;
+    }
+    
+    .btn-group>.btn:last-child:not(:first-child):not(.dropdown-toggle) {
+        border-top-right-radius: 4px;
+    }
+    
+    #usercount {
+        text-align:center;
+    }
+    
+    .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+        padding: 8px;
+        line-height: 1.42857143;
+        vertical-align: top;
+        border-top: 1px solid #ccc;
+        background-color: #141f1b;
+    }
+    
+    .table>thead>tr>th {
+        font-family: 'Quicksand', sans-serif;
+        vertical-align: bottom;
+        border-bottom: 2px solid #ccc;
+        font-weight: lighter;
+        font-size: 16px;
+    }
+    
+    /* epic colors for specific members */
+    .chat-msg-JohnRG123 .userlist_owner {
+        background-color:#66ccff;
+        border-radius:5px;
+        padding-left:3px;
+        color: #2e576b!important;
+        text-shadow: 1px 0 10px #2e576b;
+    }
+    
+    .chat-msg-MrDestructoidCyDJ .userlist_owner {
+        color: #eb47d0!important;
+        text-shadow: 1px 0 10px #2e576b;
+    }
+    
+    .chat-msg-IP0G .userlist_owner {
+        color: #00FFFF!important;
+        text-shadow: 2px 0 10px #00FFFF;
+    }
+    
+    .chat-msg-spintto .userlist_owner {
+        color: #01FFFF!important;
+        text-shadow: 1px 0 10px #01FFFF;
+    }
+    
+    .chat-msg-Zombsiee .userlist_owner {
+        color: #ffd966!important;
+        text-shadow: 0px 0px 10px rgb(255 217 102)!important;
+    }
+    
+    .chat-msg-jensai2 .userlist_op {
+        color: #ACABF8!important;
+        text-shadow: 1px 0 10px #ACABF8;
+    }
+    
+    pride version collapseabl
+    
+    .navbar-header {
+        background-image: linear-gradient(red,orange,yellow,green,blue,purple);
+    }
+   
