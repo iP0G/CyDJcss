@@ -43,12 +43,13 @@
 .chat-msg-IP0G .userlist_owner {
     /* color: #00FFFF!important; */
     /* -webkit-animation-name: colorShift; */
-    /* animation-name: colorShift; */
+    animation-name: colorShift!important;
     /* -webkit-animation-iteration-count: infinite; */
-    /* animation-iteration-count: infinite; */
+    animation-iteration-count: infinite;
     /* -webkit-animation-duration: 10s; */
-    /* animation-duration: 10s; */
-    animation: colorShift 10s infinite;
+    animation-duration: 10s;
+    /* animation: colorShift 10s infinite; */
+    animation-play-state: running!important;
     text-shadow: 2px 0 10px #00FFFF;
 }
 
