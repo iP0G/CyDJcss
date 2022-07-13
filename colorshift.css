@@ -1,4 +1,4 @@
-@-webkit-keyframes colorShift {
+/* @-webkit-keyframes colorShift {
     0% { color: #FF0000; }
     10% { color: #ffa500; }
     20% { color: #fff200; }
@@ -10,7 +10,7 @@
     80% { color: #a200ff; }
     90% { color: #ff00ea; }
     100% { color: #ff0062; }
-}
+} */
 
 @keyframes colorShift {
     0% { color: #FF0000; }
@@ -41,12 +41,12 @@
 } */
 
 .chat-msg-IP0G .userlist_owner {
-    color: #00FFFF!important;
-    -webkit-animation-name: colorShift;
+    /* color: #00FFFF!important; */
+    /* -webkit-animation-name: colorShift; */
     animation-name: colorShift;
-    -webkit-animation-iteration-count: infinite;
+    /* -webkit-animation-iteration-count: infinite; */
     animation-iteration-count: infinite;
-    -webkit-animation-duration: 10s;
+    /* -webkit-animation-duration: 10s; */
     animation-duration: 10s;
     text-shadow: 2px 0 10px #00FFFF;
 }
