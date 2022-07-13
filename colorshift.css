@@ -111,3 +111,9 @@ div.userlist_item {
     animation-iteration-count: infinite;
     animation-duration: 10s;
 }
+
+.chat-msg {
+    animation-name: colorShift!important;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
