@@ -70,14 +70,12 @@
     animation-name: colorShift!important;
     animation-iteration-count: infinite;
     animation-duration: 10s;
-    all: inherit;
 }
 
 .chat-msg .userlist_op {
     animation-name: colorShift!important;
     animation-iteration-count: infinite;
     animation-duration: 10s;
-    all: inherit;
 }
 
 .userlist_op {
@@ -85,7 +83,6 @@
     animation-name: colorShift!important;
     animation-iteration-count: infinite;
     animation-duration: 10s;
-    all: inherit;
 }
 
 .userlist_owner {
@@ -93,7 +90,6 @@
     animation-name: colorShift!important;
     animation-iteration-count: infinite;
     animation-duration: 10s;
-    all: inherit;
 }
 
 div.userlist_item > span:not(.userlist_op):not(.userlist_owner) {
@@ -101,26 +97,22 @@ div.userlist_item > span:not(.userlist_op):not(.userlist_owner) {
     animation-name: colorShift!important;
     animation-iteration-count: infinite;
     animation-duration: 10s;
-    all: inherit;
 }
 
 span:not(.userlist_op):not(.userlist_owner) > strong.username {
     animation-name: colorShift!important;
     animation-iteration-count: infinite;
     animation-duration: 10s;
-    all: inherit;
 }
 
 div.userlist_item {
     animation-name: colorShift!important;
     animation-iteration-count: infinite;
     animation-duration: 10s;
-    all: inherit;
 }
 
 .chat-msg {
     animation-name: colorShift!important;
     animation-iteration-count: infinite;
     animation-duration: 10s;
-    all: inherit;
 }
