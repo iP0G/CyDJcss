@@ -105,19 +105,17 @@ div.userlist_item > span:not(.userlist_op):not(.userlist_owner) {
     animation-duration: 10s;
 }
 
-div.userlist_item > span:not(.userlist_owner) {
-    /* color: #0087c9; */
+/* div.userlist_item > span:not(.userlist_owner) {
     animation-name: colorShift!important;
     animation-iteration-count: infinite;
     animation-duration: 10s;
 }
 
 div.userlist_item > span:not(.userlist_op) {
-    /* color: #0087c9; */
     animation-name: colorShift!important;
     animation-iteration-count: infinite;
     animation-duration: 10s;
-}
+} */
 
 /* div.userlist_item > span:is(.userlist_op):is(.userlist_owner) {
       animation-name: colorShift!important;
@@ -131,7 +129,7 @@ span:not(.userlist_op):not(.userlist_owner) > strong.username {
     animation-duration: 10s;
 }
 
-span:not(.userlist_owner) > strong.username {
+/* span:not(.userlist_owner) > strong.username {
     animation-name: colorShift!important;
     animation-iteration-count: infinite;
     animation-duration: 10s;
@@ -141,7 +139,7 @@ span:not(.userlist_op) > strong.username {
     animation-name: colorShift!important;
     animation-iteration-count: infinite;
     animation-duration: 10s;
-}
+} */
 
 /* span:is(.userlist_op):is(.userlist_owner) > strong.username {
     animation-name: colorShift!important;
