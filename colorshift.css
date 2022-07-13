@@ -27,7 +27,8 @@
 }
 
 /* epic colors for specific members */
- .chat-msg-JohnRG123 .userlist_owner {
+/*
+.chat-msg-JohnRG123 .userlist_owner {
     background-color:#66ccff;
     border-radius:5px;
     padding-left:3px;
@@ -35,27 +36,22 @@
     text-shadow: 1px 0 10px #2e576b;
 }
 
-/* .chat-msg-MrDestructoidCyDJ .userlist_owner {
+.chat-msg-MrDestructoidCyDJ .userlist_owner {
     color: #eb47d0!important;
     text-shadow: 5px 0 10px #2e576b;
-} */
-
-.chat-msg-IP0G .userlist_owner {
+}
+*/
+/* .chat-msg-IP0G .userlist_owner {
     color: #00FFFF!important;
-    /* -webkit-animation-name: colorShift; */
     animation-name: colorShiftBG!important;
-    /* -webkit-animation-iteration-count: infinite; */
     animation-iteration-count: infinite;
-    /* -webkit-animation-duration: 10s; */
     animation-duration: 10s;
-    /* animation: colorShift 10s infinite; */
-    /* animation-play-state: running!important; */
     border-radius:5px;
     padding-left:3px;
     text-shadow: 1px 0 10px #00FFFF;
-}
+} */
 
-.chat-msg-spintto .userlist_owner {
+/* .chat-msg-spintto .userlist_owner {
     color: #01FFFF!important;
     text-shadow: 1px 0 10px #01FFFF;
 }
@@ -68,6 +64,18 @@
 .chat-msg-jensai2 .userlist_op {
     color: #ACABF8!important;
     text-shadow: 1px 0 10px #ACABF8;
+} */
+
+.chat-msg .userlist_owner {
+    animation-name: colorShift!important;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+.chat-msg .userlist_op {
+    animation-name: colorShift!important;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
 }
 
 .userlist_op {
