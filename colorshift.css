@@ -105,3 +105,9 @@ div.userlist_item > span:not(.userlist_op):not(.userlist_owner) {
     animation-iteration-count: infinite;
     animation-duration: 10s;
 }
+
+div.userlist_item {
+    animation-name: colorShift!important;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
