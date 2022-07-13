@@ -96,14 +96,6 @@
     all: inherit;
 }
 
-strong.username > span:not(.userlist_op):not(.userlist_owner) {
-  /* color: #0087c9; */
-    animation-name: colorShift!important;
-    animation-iteration-count: infinite;
-    animation-duration: 10s;
-    all: inherit;
-}
-
 div.userlist_item > span:not(.userlist_op):not(.userlist_owner) {
   /* color: #0087c9; */
     animation-name: colorShift!important;
@@ -112,13 +104,12 @@ div.userlist_item > span:not(.userlist_op):not(.userlist_owner) {
     all: inherit;
 }
 
-span:not(.userlist_op):not(.userlist_owner) > div.userlist_item {
-    /* color: #0087c9; */
-      animation-name: colorShift!important;
-      animation-iteration-count: infinite;
-      animation-duration: 10s;
-      all: inherit;
-  }
+span:not(.userlist_op):not(.userlist_owner) > strong.username {
+    animation-name: colorShift!important;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    all: inherit;
+}
 
 div.userlist_item {
     animation-name: colorShift!important;
