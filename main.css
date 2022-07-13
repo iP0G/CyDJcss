@@ -40,6 +40,10 @@
     color: #eb8c47!important;
 }
 
+.userlist_MrDestructoidCyDJ {
+    color: #d13b3b!important;
+}
+
 span:not(.userlist_op):not(.userlist_owner) > strong.username {
   color: #0087c9;
 }
