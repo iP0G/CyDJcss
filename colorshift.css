@@ -1,5 +1,19 @@
 @keyframes colorShift {
-    0% { color: #FF0000; }
+    0% { color: #ff0000; }
+    10% { color: #ffa500; }
+    20% { color: #fff200; }
+    30% { color: #73ff00; }
+    40% { color: #00ff73; }
+    50% { color: #00ffc8; }
+    60% { color: #0026ff; }
+    70% { color: #4c00ff; }
+    80% { color: #a200ff; }
+    90% { color: #ff00ea; }
+    100% { color: #ff0062; }
+}
+
+@keyframes colorShiftTest {
+    0% { text: #ff0000; }
     10% { color: #ffa500; }
     20% { color: #fff200; }
     30% { color: #73ff00; }
@@ -129,7 +143,7 @@ span:not(.userlist_op):not(.userlist_owner) > strong.username {
     animation-duration: 10s;
 }
 
-/* span:not(.userlist_owner) > strong.username {
+span:not(.userlist_owner) > strong.username {
     animation-name: colorShift!important;
     animation-iteration-count: infinite;
     animation-duration: 10s;
@@ -139,7 +153,7 @@ span:not(.userlist_op) > strong.username {
     animation-name: colorShift!important;
     animation-iteration-count: infinite;
     animation-duration: 10s;
-} */
+}
 
 /* span:is(.userlist_op):is(.userlist_owner) > strong.username {
     animation-name: colorShift!important;
