@@ -13,17 +13,17 @@
 } */
 
 @keyframes colorShift {
-    0% { color: #FF0000!important; }
-    10% { color: #ffa500!important; }
-    20% { color: #fff200!important; }
-    30% { color: #73ff00!important; }
-    40% { color: #00ff73!important; }
-    50% { color: #00ffc8!important; }
-    60% { color: #0026ff!important; }
-    70% { color: #4c00ff!important; }
-    80% { color: #a200ff!important; }
-    90% { color: #ff00ea!important; }
-    100% { color: #ff0062!important; }
+    0% { background-color: #FF0000; }
+    10% { background-color: #ffa500; }
+    20% { background-color: #fff200; }
+    30% { background-color: #73ff00; }
+    40% { background-color: #00ff73; }
+    50% { background-color: #00ffc8; }
+    60% { background-color: #0026ff; }
+    70% { background-color: #4c00ff; }
+    80% { background-color: #a200ff; }
+    90% { background-color: #ff00ea; }
+    100% { background-color: #ff0062; }
 }
 
 /* epic colors for specific members */
@@ -41,7 +41,7 @@
 }
 
 .chat-msg-IP0G .userlist_owner {
-    /* color: #00FFFF!important; */
+    color: #00FFFF!important;
     /* -webkit-animation-name: colorShift; */
     animation-name: colorShift!important;
     /* -webkit-animation-iteration-count: infinite; */
@@ -49,8 +49,10 @@
     /* -webkit-animation-duration: 10s; */
     animation-duration: 10s;
     /* animation: colorShift 10s infinite; */
-    animation-play-state: running!important;
-    text-shadow: 2px 0 10px #00FFFF;
+    /* animation-play-state: running!important; */
+    border-radius:5px;
+    padding-left:3px;
+    text-shadow: 1px 0 10px #00FFFF;
 }
 
 .chat-msg-spintto .userlist_owner {
