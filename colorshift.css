@@ -1,4 +1,4 @@
-/* @-webkit-keyframes colorShift {
+@keyframes colorShift {
     0% { color: #FF0000; }
     10% { color: #ffa500; }
     20% { color: #fff200; }
@@ -10,9 +10,9 @@
     80% { color: #a200ff; }
     90% { color: #ff00ea; }
     100% { color: #ff0062; }
-} */
+}
 
-@keyframes colorShift {
+@keyframes colorShiftBG {
     0% { background-color: #FF0000; }
     10% { background-color: #ffa500; }
     20% { background-color: #fff200; }
@@ -43,7 +43,7 @@
 .chat-msg-IP0G .userlist_owner {
     color: #00FFFF!important;
     /* -webkit-animation-name: colorShift; */
-    animation-name: colorShift!important;
+    animation-name: colorShiftBG!important;
     /* -webkit-animation-iteration-count: infinite; */
     animation-iteration-count: infinite;
     /* -webkit-animation-duration: 10s; */
@@ -68,4 +68,32 @@
 .chat-msg-jensai2 .userlist_op {
     color: #ACABF8!important;
     text-shadow: 1px 0 10px #ACABF8;
+}
+
+.userlist_op {
+    /* color: #79d61d!important; */
+    animation-name: colorShift;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+.userlist_owner {
+    /* color: #eb8c47!important; */
+    animation-name: colorShift;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+span:not(.userlist_op):not(.userlist_owner) > strong.username {
+  /* color: #0087c9; */
+    animation-name: colorShift;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+div.userlist_item > span:not(.userlist_op):not(.userlist_owner) {
+  /* color: #0087c9; */
+    animation-name: colorShift;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
 }
