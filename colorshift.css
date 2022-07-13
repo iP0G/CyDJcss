@@ -35,10 +35,10 @@
     text-shadow: 1px 0 10px #2e576b;
 }
 
-.chat-msg-MrDestructoidCyDJ .userlist_owner {
+/* .chat-msg-MrDestructoidCyDJ .userlist_owner {
     color: #eb47d0!important;
     text-shadow: 5px 0 10px #2e576b;
-}
+} */
 
 .chat-msg-IP0G .userlist_owner {
     color: #00FFFF!important;
@@ -72,28 +72,28 @@
 
 .userlist_op {
     /* color: #79d61d!important; */
-    animation-name: colorShift;
+    animation-name: colorShift!important;
     animation-iteration-count: infinite;
     animation-duration: 10s;
 }
 
 .userlist_owner {
     /* color: #eb8c47!important; */
-    animation-name: colorShift;
+    animation-name: colorShift!important;
     animation-iteration-count: infinite;
     animation-duration: 10s;
 }
 
 span:not(.userlist_op):not(.userlist_owner) > strong.username {
   /* color: #0087c9; */
-    animation-name: colorShift;
+    animation-name: colorShift!important;
     animation-iteration-count: infinite;
     animation-duration: 10s;
 }
 
 div.userlist_item > span:not(.userlist_op):not(.userlist_owner) {
   /* color: #0087c9; */
-    animation-name: colorShift;
+    animation-name: colorShift!important;
     animation-iteration-count: infinite;
     animation-duration: 10s;
 }
