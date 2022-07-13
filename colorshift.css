@@ -35,13 +35,13 @@
     text-shadow: 1px 0 10px #2e576b;
 }
 
-.chat-msg-MrDestructoidCyDJ .userlist_owner {
+/* .chat-msg-MrDestructoidCyDJ .userlist_owner {
     color: #eb47d0!important;
     text-shadow: 1px 0 10px #2e576b;
-}
+} */
 
 .chat-msg-IP0G .userlist_owner {
-    /* color: #00FFFF!important; */
+    color: #00FFFF!important;
     /* -webkit-animation-name: colorShift; */
     animation-name: colorShift;
     /* -webkit-animation-iteration-count: infinite; */
