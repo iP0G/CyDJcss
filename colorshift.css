@@ -147,7 +147,7 @@ span:not(.userlist_op) > strong.username {
     animation-duration: 10s;
 } */
 
-div.userlist_item {
+/* div.userlist_item {
     animation-name: colorShift!important;
     animation-iteration-count: infinite;
     animation-duration: 10s;
@@ -157,4 +157,4 @@ div.userlist_item {
     animation-name: colorShift!important;
     animation-iteration-count: infinite;
     animation-duration: 10s;
-}
+} */
