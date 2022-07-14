@@ -12,18 +12,18 @@
     100% { color: #ff0062; }
 }
 
-@keyframes colorShiftTest {
-    0% { text: #ff0000; }
-    10% { color: #ffa500; }
-    20% { color: #fff200; }
-    30% { color: #73ff00; }
-    40% { color: #00ff73; }
-    50% { color: #00ffc8; }
-    60% { color: #0026ff; }
-    70% { color: #4c00ff; }
-    80% { color: #a200ff; }
-    90% { color: #ff00ea; }
-    100% { color: #ff0062; }
+@keyframes colorShiftAlt {
+    0% { color: #00ffc8; }
+    10% { color: #0026ff; }
+    20% { color: #4c00ff; }
+    30% { color: #a200ff; }
+    40% { color: #ff00ea; }
+    50% { color: #ff0062; }
+    60% { color: #ff0000; }
+    70% { color: #ff8800; }
+    80% { color: #fff200; }
+    90% { color: #73ff00; }
+    100% { color: #00ff73; }
 }
 
 @keyframes colorShiftBG {
@@ -161,12 +161,12 @@ span:not(.userlist_op) > strong.username {
     animation-duration: 10s;
 } */
 
-/* div.userlist_item {
+div.userlist_item {
     animation-name: colorShift!important;
     animation-iteration-count: infinite;
     animation-duration: 10s;
 }
-
+/*
 .chat-msg {
     animation-name: colorShift!important;
     animation-iteration-count: infinite;
