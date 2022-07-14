@@ -179,3 +179,12 @@ span:not(.userlist_op) > strong.username {
     animation-iteration-count: infinite;
     animation-duration: 10s;
 }
+
+.action {
+    font-style: italic;
+    /* color: #fe66ab; */
+    /* text-shadow: 0px 0px 10px #fe66ab, 0px 0px 10px #fe66ab !important; */
+    animation-name: colorShift!important;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
