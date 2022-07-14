@@ -99,11 +99,11 @@
     animation-duration: 10s;
 }
 
-/* :is(.userlist_op, span) {
+:is(.userlist_op, span) {
     animation-name: colorShift!important;
     animation-iteration-count: infinite;
     animation-duration: 10s;
-} */
+}
 
 .userlist_owner {
     /* color: #eb8c47!important; */
