@@ -54,5 +54,5 @@ div.userlist_item > span:not(.userlist_op):not(.userlist_owner) {
 .action {
     font-style: italic;
     color: #fe66ab;
-    text-shadow: 0px 0px 10px #fe66ab, 0px 0px 10px #fe66ab !important;
+    text-shadow: 0px 0px 8px #fe66ab, 0px 0px 8px #fe66ab !important;
 }
