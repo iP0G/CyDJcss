@@ -160,7 +160,7 @@ span:is(.userlist_op):is(.userlist_owner) > strong.username {
     animation-iteration-count: infinite;
     animation-duration: 10s;
 }
-/* below(also 2) and above op test 3 */
+/* below(also test 2) and above op test 3 */
 div.userlist_item {
     animation-name: colorShift!important;
     animation-iteration-count: infinite;
