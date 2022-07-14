@@ -155,12 +155,12 @@ span:not(.userlist_op) > strong.username {
     animation-duration: 10s;
 }
 
-/* span:is(.userlist_op):is(.userlist_owner) > strong.username {
+span:is(.userlist_op):is(.userlist_owner) > strong.username {
     animation-name: colorShift!important;
     animation-iteration-count: infinite;
     animation-duration: 10s;
-} */
-
+}
+/* below(also 2) and above op test 3 */
 div.userlist_item {
     animation-name: colorShift!important;
     animation-iteration-count: infinite;
