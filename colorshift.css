@@ -166,12 +166,12 @@ div.userlist_item {
     animation-iteration-count: infinite;
     animation-duration: 10s;
 }
-/*
+/* below test 715/551p*/
 .chat-msg {
-    animation-name: colorShift!important;
+    animation-name: colorShiftAlt!important;
     animation-iteration-count: infinite;
     animation-duration: 10s;
-} */
+}
 
 .chat-name {
     font-weight: bold;
