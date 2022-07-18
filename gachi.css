@@ -1,3 +1,12 @@
+body {
+    background-image: url("https://cdn.discordapp.com/attachments/679270173567614987/998718844724064256/HandsUp.png")!important;
+    background-repeat: repeat!important;
+    font-family: 'Varela Round', sans-serif;
+    font-size:14px;
+    font-weight:lighter;
+    overflow-x:hidden;
+}
+
 /* epic colors for specific members */
 .chat-msg-JohnRG123 .userlist_owner {
     background-color:#66ccff;
@@ -32,8 +41,52 @@
     text-shadow: 1px 0 10px #ACABF8;
 }
 
-pride version collapseabl
-    
-    .navbar-header {
-        background-image: linear-gradient(red,orange,yellow,green,blue,purple);
-    }
+.chat-msg-ItMePeachy .userlist_op {
+    color: #ffbcf1!important;
+    text-shadow: 1px 0 10px #ffbcf1;
+}
+
+.userlist_op {
+    color: #79d61d!important;
+}
+
+.userlist_owner {
+    color: #eb8c47!important;
+}
+
+.userlist-MrDestructoidCyCJ {
+    color: #d13b3b!important;
+}
+
+span:not(.userlist_op):not(.userlist_owner) > strong.username {
+  color: #0087c9;
+}
+
+div.userlist_item > span:not(.userlist_op):not(.userlist_owner) {
+  color: #0087c9;
+}
+.action {
+    font-style: italic;
+    color: #fe66ab;
+    text-shadow: 0px 0px 8px #fe66ab, 0px 0px 8px #fe66ab !important;
+}
+
+.dark-theme > .odd-message {
+  background-color: #141f1b;
+}
+  
+.dark-theme > .even-message {
+  background-image: url("https://cdn.betterttv.net/emote/57719a9a6bdecd592c3ad59b/2x.gif")!important;
+  background-repeat: repeat!important;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+  
+.light-theme > .odd-message {
+  background-color: #ffffff;
+}
+  
+.light-theme > .even-message {
+  background-image: url("https://cdn.betterttv.net/emote/57719a9a6bdecd592c3ad59b/2x.gif")!important;
+  background-repeat: repeat!important;
+  background-color: #f5f5f5;
+}

@@ -1,3 +1,10 @@
+body {
+    font-family: 'Varela Round', sans-serif;
+    font-size:14px;
+    font-weight:lighter;
+    overflow-x:hidden;
+}
+
 /* epic colors for specific members */
  .chat-msg-JohnRG123 .userlist_owner {
     background-color:#66ccff;
@@ -33,8 +40,8 @@
 }
 
 .chat-msg-ItMePeachy .userlist_op {
-    color: #FFBCF1!important;
-    text-shadow: 1px 0 10px #FFBCF1;
+    color: #ffbcf1!important;
+    text-shadow: 1px 0 10px #ffbcf1;
 }
 
 .userlist_op {
@@ -60,4 +67,20 @@ div.userlist_item > span:not(.userlist_op):not(.userlist_owner) {
     font-style: italic;
     color: #fe66ab;
     text-shadow: 0px 0px 8px #fe66ab, 0px 0px 8px #fe66ab !important;
+}
+
+.dark-theme > .odd-message {
+  background-color: #141f1b;
+}
+  
+.dark-theme > .even-message {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+  
+.light-theme > .odd-message {
+  background-color: #ffffff;
+}
+  
+.light-theme > .even-message {
+  background-color: #f5f5f5;
 }
