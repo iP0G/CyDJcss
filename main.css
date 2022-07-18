@@ -32,6 +32,11 @@
     text-shadow: 1px 0 10px #ACABF8;
 }
 
+.chat-msg-ItMePeachy .userlist_op {
+    color: #ffbcf1!important;
+    text-shadow: 1px 0 10px #ACABF8;
+}
+
 .userlist_op {
     color: #79d61d!important;
 }
