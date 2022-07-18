@@ -72,21 +72,21 @@ div.userlist_item > span:not(.userlist_op):not(.userlist_owner) {
 }
 
 .dark-theme > .odd-message {
+  background-image: url("https://cdn.betterttv.net/emote/57719a9a6bdecd592c3ad59b/2x.gif")!important;
+  background-repeat: repeat!important;
   background-color: #141f1b;
 }
   
 .dark-theme > .even-message {
-  background-image: url("https://cdn.betterttv.net/emote/57719a9a6bdecd592c3ad59b/2x.gif")!important;
-  background-repeat: repeat!important;
   background-color: rgba(0, 0, 0, 0.15);
 }
   
 .light-theme > .odd-message {
+  background-image: url("https://cdn.betterttv.net/emote/57719a9a6bdecd592c3ad59b/2x.gif")!important;
+  background-repeat: repeat!important;
   background-color: #ffffff;
 }
   
 .light-theme > .even-message {
-  background-image: url("https://cdn.betterttv.net/emote/57719a9a6bdecd592c3ad59b/2x.gif")!important;
-  background-repeat: repeat!important;
   background-color: #f5f5f5;
 }
