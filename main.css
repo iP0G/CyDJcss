@@ -7,11 +7,14 @@ body {
 
 /* epic colors for specific members */
  .chat-msg-JohnRG123 .userlist_owner {
-    background-color:#66ccff;
-    border-radius:5px;
-    padding-left:3px;
-    color: #2e576b!important;
-    text-shadow: 1px 0 10px #2e576b;
+    font-weight: 400!important;
+    background-color: #66ccff;
+    background-image: url(https://cdn.discordapp.com/attachments/915490680468561990/947608302202789958/trig.gif)!important;
+    border-radius: 6px;
+    padding-left: 3px;
+    border: 2px solid #66ccff!important;
+    color: #ffffff!important;
+    text-shadow: 1px 0 10px #000000;
 }
 
 .chat-msg-MrDestructoidCyDJ .userlist_owner {
